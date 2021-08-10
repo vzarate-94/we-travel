@@ -27,7 +27,6 @@ const App = () => {
 	return (
 			<div>
 			<NavBar user={user} handleLogout={handleLogout}/>
-			
 			<Route exact path='/'>
 				<Landing user={user} />
 			</Route>
