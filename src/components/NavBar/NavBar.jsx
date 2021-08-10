@@ -9,28 +9,28 @@ const NavBar = ({ user, handleLogout }) => {
 			{user ? (
 				<ul>
 					<li>Welcome, {user.name}</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to='' onClick={handleLogout}>Log out</NavLink>
 					</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/users">Users</NavLink>
 					</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/home">Home</NavLink>
 					</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/trips">Trips</NavLink>
 					</li>
 				</ul>
 			) : (
 				<ul>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/login">Log In</NavLink>
 					</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/users">Users</NavLink>
 					</li>
-					<li>
+					<li className={styles.navLinks}>
 						<NavLink to="/signup">Sign Up</NavLink>
 					</li>
 				</ul>
