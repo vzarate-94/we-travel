@@ -4,7 +4,6 @@ import React, {useState} from 'react';
 import styles from './AddActivityForm.module.css'
 
 // Services
-// import { create } from '../../services/activityService.js'
 
 
 function AddActivityForm(props) {
@@ -16,8 +15,6 @@ function AddActivityForm(props) {
     cost: 0,
     budgetCategory: 'travel',
     date: '',
-    // attendees: [],
-    // owner: '',
     isKeyActivity: false
   })
 
@@ -36,8 +33,6 @@ function AddActivityForm(props) {
         cost: 0,
         budgetCategory: 'travel',
         date: '',
-        // attendees: [],
-        // owner: '',
         isKeyActivity: false,
     })
   }
@@ -120,14 +115,6 @@ function AddActivityForm(props) {
             type="date"
             name="date"
             value={formData.date}
-            onChange={handleChange}
-          />
-          <label htmlFor="isKeyActivity">Is this a key activity?</label>
-          <input
-            id="activity-name" 
-            type="checkbox" 
-            name="isKeyActivity"
-            value={formData.isKeyActivity}
             onChange={handleChange}
           />
           <button type="submit">

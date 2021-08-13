@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Redirect, useHistory } from 'react-router-dom'
 import styles from './Trips.module.css'
 
 // Services
@@ -10,7 +9,6 @@ import TripCard from '../../components/TripCard/TripCard'
 import AddTripForm from '../../components/AddTripForm/AddTripForm'
 
 function Trips(props) {
-  const history = useHistory()
   const [trips, setTrips] = useState([])
   const [showAddTripForm, setShowAddTripForm] = useState(false)
   

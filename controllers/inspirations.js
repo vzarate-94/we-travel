@@ -1,7 +1,5 @@
-import { json } from 'express'
 import nodeFetch from 'node-fetch'
 import { createApi } from 'unsplash-js'
-// import { toJSON } from 'flatted';
 
 export {
     index

@@ -8,7 +8,6 @@ import styles from './BudgetForm.module.css'
 function BudgetForm({trip, handleAddBudget}) {
   const {budget} = trip;
 
-  // const formatToUSD = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
 
   const [formData, setFormData] = useState({
     total: budget ? budget.total : 0,

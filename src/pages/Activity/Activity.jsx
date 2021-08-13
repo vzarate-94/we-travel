@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
 import styles from './Activity.module.css'
 import * as activityService from '../../services/activityService'
 import { useParams } from 'react-router-dom'
 import EditActivityForm from '../../components/EditActivityForm/EditActivityForm';
-import Trip from '../Trip/Trip';
 import dateFormat from 'dateformat'
 
 function Activity(props) {
@@ -55,7 +53,6 @@ function Activity(props) {
         <h2>Address: {activity.address}</h2>
         <p> <strong>Notes</strong>: {activity.notes}</p>
         <h3>Cost: {activity.cost}</h3>
-        {/* <h3>Budget Category: {activity.BudgetCategory}</h3> */}
         <h3>Date: {dateFormat(activity.date, "mediumDate", true)}</h3>
         <button 
           type="button"

@@ -76,19 +76,6 @@ function EditActivityForm({activity, handleUpdateActivity}) {
             value={formData.cost}
             onChange={handleChange}
           />
-          {/* <label htmlFor="activity-budgetCategory">Budget Category</label>
-          <select
-            id="activity-budgetCategory" 
-            name="budgetCategory"
-            value={formData.budgetCategory}
-            onChange={handleChange}
-          >
-              <option value="travel">Travel</option>
-              <option value="lodging">Lodging</option>
-              <option value="food">Food</option>
-              <option value="activities">Activities</option>
-              <option value="misc">Misc</option>
-          </select> */}
           <label htmlFor="activity-date">Date</label>
           <input 
             id="activity-date"
