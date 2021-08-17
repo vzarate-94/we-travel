@@ -12,7 +12,15 @@ import TripCard from '../../components/TripCard/TripCard'
 
 function Home(props) {
   const [trips, setTrips] = useState([])
-  console.log(trips)
+  
+
+  const handleDeleteTrip = id => {
+    tripService.deleteOne(id)
+      .then(
+        setTrips(trips.filter(trip => id !== trip._id))
+      )
+  }
+
 
   useEffect(() => {
     tripService.getAll()
@@ -27,6 +35,7 @@ function Home(props) {
           <h2>Upcoming Trips</h2>
           <TripCard
               trip={trips[0]}
+              handleDeleteTrip={handleDeleteTrip}
             /> 
           <Link to="/trips">
             See more trips
