@@ -17,7 +17,7 @@ function ImageCard({countryPic}){
                                     <h3>{countryPic.country}</h3>
                                 </div>
                                 <div className={styles.cardBody}>
-                                    <button>Travel Here</button>
+                                    <button className={styles.cardButton}>Travel Here</button>
                                 </div>
                         </div>
                     </Link>

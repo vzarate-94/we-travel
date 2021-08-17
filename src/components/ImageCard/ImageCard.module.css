@@ -48,3 +48,7 @@ html {
       display: flex;
       justify-content: center;
   }
+
+  .cardButton {
+    background-color: var(--thatch);
+  }
